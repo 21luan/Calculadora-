@@ -67,7 +67,7 @@ h1{
 #resul{
     width: 190px;
     height: 30px;
-    background-color: wheat;
+    background-color: white;
     margin: 5px;
     color:black;
     text-align: right;
@@ -129,30 +129,26 @@ h1{
     </div>
     
     <script>
-        function insert(num){
-    var numero = document.getElementById("resul").innerHTML;
-    document.getElementById("resul").innerHTML = numero + num;
-}
-
-function clean(){
-    document.getElementById("resul").innerHTML = "";
-}
-
-function del(){
-    var resul = document.getElementById("resul").innerHTML; 
-    document.getElementById("resul").innerHTML = resul.substring(0, resul.length -1);
-}
-
-function calcular(){
-    var resul = document.getElementById('resul').innerHTML;
-    if (resul){
-        document.getElementById('resul').innerHTML = eval(resul);
+            function insert(num){
+        var numero = document.getElementById("resul").innerHTML;
+        document.getElementById("resul").innerHTML = numero + num;
     }
-}
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Term
+
+    function clean(){
+        document.getElementById("resul").innerHTML = "";
+    }
+
+    function del(){
+        var resul = document.getElementById("resul").innerHTML; 
+        document.getElementById("resul").innerHTML = resul.substring(0, resul.length -1);
+    }
+
+    function calcular(){
+        var resul = document.getElementById('resul').innerHTML;
+        if (resul){
+            document.getElementById('resul').innerHTML = eval(resul);
+        }
+    }
     </script>
 </body>
 </html>
